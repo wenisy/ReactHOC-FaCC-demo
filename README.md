@@ -13,4 +13,6 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 # ReactHOC-FaCC-demo
-A comparison between React HOC and Facc
+A comparison between React HOC and FaCC
+
+You can use git logs to check how to use HOC and FaCC.
