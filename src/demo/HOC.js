@@ -2,10 +2,21 @@ import React, { Component } from "react";
 
 const HOC = WrapperComponent =>
   class HOC extends Component {
-    state = { toggle: false };
+    state = { toggle: false, data: {} };
     click = () => {
       this.setState({ toggle: !this.state.toggle });
     };
+
+    fetchData = () => {
+      fetch("/api", params).then(response => {
+        const { data } = data;
+        this.setState(data);
+      });
+    };
+
+    componentDidMount() {
+      this.fetchData();
+    }
 
     render() {
       const { toggle } = this.state;

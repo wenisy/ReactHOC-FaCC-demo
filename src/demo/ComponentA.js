@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import FaCC from "./FaCC";
+import Hooks from "./Hooks";
 
 export default class ComponentA extends Component {
   render() {
-    return <FaCC>{toggle => toggle && <div>ComponentA</div>}</FaCC>;
+    const data = Hooks();
+    return <div>{data}</div>;
   }
 }
